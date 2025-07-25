@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+	configure)
+	if command -v update-initramfs > /dev/null 2>&1 ; then
+		update-initramfs -u
+	else
+		echo "WARN: Skipped updating initramfs"
+	fi
+esac
+
+exit 0
+

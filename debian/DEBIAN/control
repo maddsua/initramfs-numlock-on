@@ -1,0 +1,8 @@
+Package: initramfs-numlock-on
+Version: 0.1.0
+Architecture: all
+Depends: kbd
+Description: Automatically unable NumLock on system boot
+Section: utils
+Priority: optional
+Maintainer: maddsua <maddsuadev@pm.me>

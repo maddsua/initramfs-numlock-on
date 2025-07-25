@@ -1,0 +1,21 @@
+#!/bin/sh
+
+PREPREQ=""
+prereqs() { echo "$PREREQ"; }
+
+case "$1" in
+	prereqs)
+	prereqs
+	exit 0
+	;;
+esac
+
+. /usr/share/initramfs-tools/hook-functions
+
+if test -x /usr/bin/setleds ; then
+	copy_exec /usr/bin/setleds /usr/bin
+fi
+
+exit 0
+
+
